@@ -1,8 +1,32 @@
-POST http://localhost:8080/api/v1/user
+### Create User
+POST http://localhost:8080/api/v1/users
 Content-Type: application/json
 
 {
-  "firstName": "Vijayaraghavan",
-  "lastName": "Sundararaman",
+  "firstName": "Tony",
+  "lastName": "Stark",
+  "email": "tony@stark.com"
+}
+
+### Get Users
+
+GET http://localhost:8080/api/v1/users
+
+### Get User By ID
+
+GET http://localhost:8080/api/v1/users/1
+
+### Delete User By ID
+
+DELETE http://localhost:8080/api/v1/users/2
+
+### Delete User By ID
+
+PUT http://localhost:8080/api/v1/users/1
+Content-Type: application/json
+
+{
+  "firstName": "Vijay",
+  "lastName": "S",
   "email": "vijaygenius123@gmail.com"
 }
